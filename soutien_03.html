@@ -18,10 +18,12 @@
         <ul>
             <li>faire les points dans l'ordre et ne passer au point suivant que lorsque le précédent est achevé
                 et testé,</li>
-            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes variables,</li>
+            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes
+                variables,</li>
             <li>écrire du code structuré et correctement indenté,</li>
             <li>écrire du code <strong>largement documenté !</strong></li>
-            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html</li>
+            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html
+            </li>
         </ul>
         <p>Eléments de départ fournis quel que soit l'exercice :</p>
         <ul>
@@ -35,15 +37,17 @@
                     <li>une fonction de génération d'une série aléatoire de nombres entiers rangés dans un tableau de
                         type Array,</li>
                 </ul>
-                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par contre, 
+                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par
+                contre,
                 <span class="text-danger">vous n'avez, en aucun cas, besoin</span> :
                 <ul>
                     <li><span class="text-danger">de modifier le code</span> de ces outils,</li>
-                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans <em>tools.js</em> dans 
+                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans
+                        <em>tools.js</em> dans
                         votre propre code.<br>
                         Si vous utilisez les fonctions outils, vous ne pouvez que les "appeler".</li>
                 </ul>
-                
+
             </li>
         </ul>
         <h5 class="text-success text-center">Que la force soit avec vous !</h5>
@@ -52,8 +56,9 @@
     <!-- subject -->
     <div class="card subject">
         <p class="h6 font-weight-bold text-center">Soutien-2 #03 - Vers un bon découpage...</p>
-        <p>Repartir du code établi lors de l'exercice précédent (Soutien-2 #02) et déléguer le calcul du cube d'une 
-            valeur <em>x -> x<sup>3</sup></em> à une fonction nommée <code>cube</code> qui devra être appelée par la fonction 
+        <p>Repartir du code établi lors de l'exercice précédent (Soutien-2 #02) et déléguer le calcul du cube d'une
+            valeur <em>x -> x<sup>3</sup></em> à une fonction nommée <code>cube</code> qui devra être appelée par la
+            fonction
             principale.
         </p>
     </div>
@@ -74,6 +79,19 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        let number = document.getElementById("number").value;
+        
+        function go(){
+        if (number >= 5 && number <= 15){
+        console.log(cube())
+        }
+        else{
+        alert("Veuillez choisir un nombre entre 5 et 15")
+        }
+    }
+    function cube() {
+            let number = number * number * number;
+        }
 
         // Your code here...
 

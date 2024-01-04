@@ -88,7 +88,7 @@
         // Your code here...
 
         // Step 0: que faut-il écrire pour répondre à l'événement "onclick" ?
-        go(number){
+        function go (){
 
         
 
@@ -105,8 +105,12 @@
         // Step 3: calculer le cube de la valeur saisie
         // Pour rappel si on appele x la valeur saisie, son cube vaut x * x * x
         number=number*number*number;
+        console.log(number);}
+    
+    else {
+        alert("choisissez un nombre entre 5 et 15")
     }
-    console.log(number);
+    displayResult(number)
 }
        
 

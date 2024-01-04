@@ -74,6 +74,7 @@
                 zone de <em>&lt;script&gt;...&lt;/script&gt;</em>) et vérifier que les résultats attendus pour les différents calculs 
                 sont corrects.</li>
         </ol>
+        
     </div>
 
 
@@ -84,8 +85,56 @@
     <!-- javascript part -->
     <script type="text/javascript">
 
-        // Your code here...
+        // SOUTIEN-2 #01 Appel de la fonction
+        /* 1. On appelle a et b dans la fonction hello des arguments 
 
+        *   2. Lorsque l'on écrit resultOne= hello (2,3); on ditque resultOne vaudra le return de hello avec comme arguments 2 et 3.
+            2.2. resultOne vaudra alors 2*2=4 puis 4-3 =1 donc resultOne vaudra 1
+            
+        *   3. La fonction hi ne prends en sorte que 1 seul argument (a)  , qui le multiplie par lui même et qui fait modulo 3 c'est a dire le reste de la division par 3.
+
+        *   4 Dans resultTwo si l'argument de hi vaut 4 alors on fait
+         4*4=16
+          puis on applique le modulo 3 donc on le divise  par 3 ,
+           16/3= 5 reste 1 ,
+            donc hi vaut 1.
+
+
+
+        *   5. Pour resultThree on apllique d'abord la fonction hello avec les paramètre 1 pour a et 4 pour b ce qui donne 
+        2*1=2 puis 
+        2-4=-2 
+        donc le a de hi vaudra -2
+        On passe ensuite à la fonction hi avec a qui vaut -2
+        (-2) *(-2)=4
+        4 % 3 = 1 reste 1
+        donc la variable resultThree vaudra 1
+
+
+        6.  Pour resultThree on apllique d'abord la fonction hello avec les paramètre 1 pour a et 4 pour b ce qui donne 
+        2*1=2 puis 
+        2-4=-2 
+        donc le a vaudra 1  le B dU Deuxieme hello vaudra -2    
+        on applique ensuite la deuxieme fonction hello avec commme arguments a=1 et b=-2
+        2*1=2
+        2-(-2) = 4
+        Donc resultFour vaudra 4.*/
+
+        
+        function hello(a,b){
+            return((2*a)-b)
+        }
+
+        function hi (a){
+            return((a*a) % 3)
+        }
+
+        resultOne= hello(2,3);
+        resultTwo = hi (4);
+        resultThree = hi(hello(1,4))
+        resultFour = hello(resultTwo,hello(1,4))
+
+        console.log(resultOne, resultTwo, resultThree, resultFour)
     </script>
 </body>
 

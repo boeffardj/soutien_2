@@ -98,16 +98,20 @@
 
 
         // Step 2: tester la valeur saisie ; doit être un nombre valide entre 5 et 15
-        if (number >= 5 && number <=15)
-       {
-
+        if (number !== isNaN)
+       { alert("veuillez entrer un nombre")
+       }
 
         // Step 3: calculer le cube de la valeur saisie
         // Pour rappel si on appele x la valeur saisie, son cube vaut x * x * x
-        number=number*number*number;
-        console.log(number);}
+       
+else if ((number >= 5 && number <=15)){
+    number=number*number*number;
+        console.log(number);
+}
+
     
-    else {
+    else{
         alert("choisissez un nombre entre 5 et 15")
     }
     displayResult(number)

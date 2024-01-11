@@ -83,7 +83,32 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+function go(){
+            
+            let number = parseInt(document.getElementById("number").value);
+    let tab = [];
 
+        for(let i=1; i<=number ;i++){
+
+            if (number >= 5 && number <= 15){
+            tab.push(cube(i))
+        }
+        else{
+        alert("Veuillez choisir un nombre entre 5 et 15")
+        }
+        
+    }
+    displayArray(tab)
+    }
+  
+    function cube(nombre) {
+            if(nombre %2 == 0)
+            return ( nombre*nombre*nombre);
+            
+            else (nombre %2 == 1)
+                return (nombre*nombre);
+            
+        }
         // Your code here...
 
     </script>
